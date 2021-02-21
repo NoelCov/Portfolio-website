@@ -1,0 +1,143 @@
+body {
+    background-color: #364f6b;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 90px;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+h5 {
+    margin: 30px 4rem;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+
+}
+
+/* Header Component */
+.header-container {
+    position: relative;
+    margin: 8% 5%;
+}
+
+img {
+    margin-top: 5rem;
+    height: 300px;
+
+}
+
+/* NavBar Component */
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    margin: 5px 50px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+/* About Component */
+.about-container{
+    margin: 15% 5% 8%;
+}
+
+.cards-container {
+    margin: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container {
+    margin: 50px 30px;
+    width: 25rem;
+    background-color: #303841;
+    height: 38rem;
+    display: inline-block;
+    border-radius: 18px;
+}
+
+hr {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer Component */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+}
+
+.footer-element {
+    color: white;
+}
+
+.footer-element:hover {
+    color: #364f6b;
+}
+
+/* Contact Component */
+.contact-container {
+    margin-top: 3%;
+    height: 100%;
+}
+
+.mb-3 {
+    background-color: #393e46;
+    margin: 5rem auto;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.form-control {
+    width: 80%;
+    margin: 15px auto;
+}
+
+/* Projects Component */
+.project-container {
+    margin: 10% auto 10%;
+    background-color: #303841;
+    width: 60%;
+    height: 36rem;
+    border-radius: 15px;
+}
