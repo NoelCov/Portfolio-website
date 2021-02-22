@@ -8,7 +8,7 @@ function ProjectContainer(props) {
         <h3 style={{paddingTop: "20px"}}>{props.title}</h3>
         <hr />
         <h5>{props.text}</h5>
-        <p style={{fontSize: "20px"}}>Technologies used for this project: </p>
+        <p className="project-container-subtitle">Technologies used for this project: </p>
         <ul style={{listStyle: "none"}}>
         {props.items.map((item, key) => <li key={key}>{item}</li> )}
         </ul>

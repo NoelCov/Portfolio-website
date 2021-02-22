@@ -2,7 +2,7 @@ import Card from "./Card";
 
 function About() {
     return(
-        <div id="about" className="about-container">
+        <div id="about" className="header-container">
           <h2>ABOUT</h2>
           <div className="cards-container">
             <Card

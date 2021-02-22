@@ -4,7 +4,7 @@ import DataUsageIcon from '@material-ui/icons/DataUsage';
 
 function Projects() {
     return (
-        <div>
+        <div className="projects-container">
             <ProjectContainer 
                 title="E-Commerce Book Store"
                 text="This project was made thinking in what an online book store has.

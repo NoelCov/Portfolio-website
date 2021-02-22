@@ -34,20 +34,21 @@ h5 {
 /* Header Component */
 .header-container {
     position: relative;
-    margin: 8% 5%;
+    width: 100%;
+    margin: 8% auto;
 }
 
 img {
     margin-top: 5rem;
     height: 300px;
-
 }
 
 /* NavBar Component */
 .navbar {
     display: flex;
-    justify-content: center;
     width: 100%;
+    justify-content: center;
+    list-style: none;
 }
 
 .nav-item {
@@ -65,23 +66,22 @@ img {
 }
 
 /* About Component */
-.about-container{
-    margin: 15% 5% 8%;
-}
-
 .cards-container {
-    margin: 10px 5%;
+    position: relative; /*Last thing I changed! */
+    width: 90%;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
 }
 
+/* Card Component */
 .card-container {
     margin: 50px 30px;
-    width: 25rem;
     background-color: #303841;
-    height: 38rem;
+    height: auto;
     display: inline-block;
     border-radius: 18px;
+    padding-top: 2%;
 }
 
 hr {
@@ -118,10 +118,9 @@ hr {
 .contact-container {
     margin-top: 3%;
     height: 100%;
-    margin-bottom: 8%;
 }
 
-.mb-3 {
+.contact-form {
     background-color: #393e46;
     margin: 5rem auto;
     padding: 1rem;
@@ -136,9 +135,114 @@ hr {
 
 /* Projects Component */
 .project-container {
-    margin: 10% auto 10%;
+    margin: 8% auto 10%;
+    padding-bottom: 1%;
     background-color: #303841;
     width: 60%;
-    height: 36rem;
+    height: auto;
     border-radius: 15px;
+}
+
+.project-container-subtitle {
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    /* Card Component */
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Contact Component */
+
+    .contact-container {
+        margin: 20% 0;
+    }
+
+    .contact-form {
+        width: 85%;
+    }
+
+    .contact-title {
+        font-size: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    /* NavBar */
+    .navbar {
+        height: 8rem;
+        overflow: scroll;
+        display: grid;
+        margin-top: -40px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    /* Header Component */
+    .header-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-container{
+        margin: 2rem auto 10rem;
+    }
+
+    /* About Component */
+    .card-container {
+        height: 24rem;
+        overflow: auto;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 8px;
+    }
+
+    /* Contact Component */
+    .contact-title {
+        font-size: 25px;
+    }
+
+    .project-container {
+        width: 95%;
+        height: 30rem;
+        overflow: scroll;
+    }
+
+    .project-container-subtitle {
+        font-size: 18px;
+    }
 }

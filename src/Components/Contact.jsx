@@ -27,10 +27,10 @@ function Contact() {
                 <Success />
               : 
                 <div>
-                    {error ? <h2>Message could not be sent. Try again please</h2> :<h2>Thank you for your interest!</h2>}
+                    {error ? <h2 className="contact-title">Message could not be sent. Try again please</h2> :<h2 className="contact-title">Thank you for your interest!</h2>}
                     <hr style={{width: "15%"}} />
                     <form onSubmit={sendEmail} autoComplete="off" className="form">
-                    <div className="mb-3">
+                    <div className="contact-form">
                         <input required type="text" className="form-control" placeholder="Your name" name="name"/>
                         <input required type="email" className="form-control" placeholder="Your email" name="email" />
                         <input required type="text" className="form-control" placeholder="Subject" name="subject" />

@@ -17,7 +17,6 @@ function Routes() {
     return (
         <Router>
             <NavBar />
-            
             <Switch>
             <Route exact path="/">
                 <Header />
