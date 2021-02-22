@@ -237,9 +237,11 @@ hr {
     }
 
     .project-container {
-        width: 95%;
+        width: 90%;
         height: 30rem;
         overflow: scroll;
+        margin-top: 15%;
+        margin-bottom: 25%;
     }
 
     .project-container-subtitle {
