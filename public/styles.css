@@ -1,250 +1,179 @@
 body {
-    background-color: #364f6b;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+  background: #50a3a2;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 200;
 }
 
 h1 {
-    font-size: 90px;
-    letter-spacing: 5px;
-    font-weight: 200;
+  font-size: 50px;
+  font-weight: 200;
+  color: black;
+  margin-bottom: 30px;
 }
 
 h2 {
-    font-size: 35px;
-    letter-spacing: 2px;
-    font-weight: 200;
-    margin-top: 2rem;
+  font-size: 40px;
+  padding-top: 5%;
+  color: black;
 }
 
-h3 {
-    font-size: 30px;
-    margin-top: 10px;
-    letter-spacing: 2px;
+
+/* Simple Container for most components */
+.container {
+  display: relative;
+  margin: 10% auto 0 auto;
+  text-align: center;
+  padding: 60px 0;
 }
 
-h5 {
-    margin: 30px 4rem;
-    letter-spacing: 0.5px;
-    line-height: 1.4;
-
+/* Home Component */
+.btn {
+  display: inline-block;
+  margin: 5px;
 }
 
-/* Header Component */
-.header-container {
-    position: relative;
-    width: 100%;
-    margin: 8% auto;
+/* Get Started Component */
+form {
+  display: flex;
+  justify-content: center;
 }
 
-img {
-    margin-top: 5rem;
-    height: 300px;
+.form-btn {
+  display: inline-block;
+  margin: 5px;
 }
 
-/* NavBar Component */
-.navbar {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    list-style: none;
+.form-btn-submit {
+  padding-top: 2px;
+  margin: 0;
 }
 
-.nav-item {
-    margin: 5px 50px;
+.getStarted-container {
+  position: relative;
+  margin: 10% auto;
+  text-align: center;
 }
 
-.nav-link {
-    font-size: 18px;
-    font-weight: 300;
-    color: white;
-}
-
-.nav-link:hover {
-    color: gray;
-}
-
-/* About Component */
-.cards-container {
-    position: relative; /*Last thing I changed! */
-    width: 90%;
-    margin: 10px auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Card Component */
-.card-container {
-    margin: 50px 30px;
-    background-color: #303841;
-    height: auto;
-    display: inline-block;
-    border-radius: 18px;
-    padding-top: 2%;
-}
-
-hr {
-    border: 2px solid white;
-    border-radius: 15px;
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
+.quote {
+  font-size: 25px;
+  margin-top: 5%;
 }
 
 /* Footer Component */
-
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #222831;
+  padding-top: 3px;
+  width: 100%;
 }
 
 .footer-list {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 8px;
+  list-style-type: none;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
 }
 
 .footer-element {
-    color: white;
+  padding: 2px 0 8px;
+  margin: 0 auto;
+  color: #ccf2f4;
 }
 
 .footer-element:hover {
-    color: #364f6b;
+  color: grey;
 }
 
-/* Contact Component */
-.contact-container {
-    margin-top: 3%;
-    height: 100%;
+/* Calendar component */
+.calendar-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin: 0 auto;
 }
 
-.contact-form {
-    background-color: #393e46;
-    margin: 5rem auto;
-    padding: 1rem;
-    width: 30%;
-    border-radius: 15px;
+/* Item component */
+.habit-element {
+  font-size: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  width: 30%;
+  margin: 5px auto;
 }
 
-.form-control {
+/* HabitContainer Component */
+.list-group {
+  position: relative;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  /* Home Component */
+  .container {
+    margin: 30% auto;
+  }
+
+  .title {
+    font-size: 100px;
+  }
+
+  .quote {
+    font-size: 35px;
+  }
+
+  /* Get Started Component */
+  .getStarted-container {
+    margin: 20% auto;
+  }
+
+  .calendar-string {
+    font-size: 70px;
+  }
+
+  .habit-element {
+    width: 70%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  /* Home Container */
+  .title {
+    font-size: 50px;
+  }
+
+  .container {
+    margin: 8rem auto;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  /* getStarted Container */
+  .getStarted-container {
+    margin: 50% auto;
+  }
+
+  .calendar-string {
+    font-size: 45px;
+  }
+
+  .habit-element {
+    font-size: 20px;
     width: 80%;
-    margin: 15px auto;
-}
-
-/* Projects Component */
-.project-container {
-    margin: 8% auto 10%;
-    padding-bottom: 1%;
-    background-color: #303841;
-    width: 60%;
-    height: auto;
-    border-radius: 15px;
-}
-
-.project-container-subtitle {
-    font-size: 25px;
-}
-
-
-@media only screen and (max-width: 1024px) {
-    h1 {
-        font-size: 70px;
-    }
-
-    h2 {
-        font-size: 35px;
-    }
-
-    /* Card Component */
-    .cards-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Contact Component */
-
-    .contact-container {
-        margin: 20% 0;
-    }
-
-    .contact-form {
-        width: 85%;
-    }
-
-    .contact-title {
-        font-size: 60px;
-    }
-}
-
-
-@media only screen and (max-width: 480px){
-
-    h1 {
-        font-size: 25px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 18px;
-    }
-
-    h5 {
-        font-size: 14px;
-    }
-
-    /* NavBar */
-    .navbar {
-        height: 8rem;
-        overflow: scroll;
-        display: grid;
-        margin-top: -40px;
-    }
-
-    .nav-link {
-        font-size: 12px;
-    }
-
-    /* Header Component */
-    .header-img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .header-container{
-        margin: 2rem auto 10rem;
-    }
-
-    /* About Component */
-    .card-container {
-        height: 24rem;
-        overflow: auto;
-    }
-
-    .cards-container {
-        display: flex;
-        flex-direction: column;
-        font-size: 8px;
-    }
-
-    /* Contact Component */
-    .contact-title {
-        font-size: 25px;
-    }
-
-    .project-container {
-        width: 90%;
-        height: 30rem;
-        overflow: scroll;
-        margin-top: 15%;
-        margin-bottom: 25%;
-    }
-
-    .project-container-subtitle {
-        font-size: 18px;
-    }
+  }
 }
